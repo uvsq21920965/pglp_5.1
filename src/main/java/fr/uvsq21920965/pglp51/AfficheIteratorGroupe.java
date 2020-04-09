@@ -10,7 +10,7 @@ import java.util.List;
  * @author sarra Belmahdi.
  *
  */
-public class AfficheIteratorGroupe implements Serializable{
+public class AfficheIteratorGroupe implements Serializable {
   /**
    * liste des Ipersonnels.
    */

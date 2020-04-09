@@ -7,7 +7,7 @@ import java.io.File;
 import org.junit.Test;
 
 import fr.uvsq21920965.pglp51.Personnels;
-import fr.uvsq21920965.pglp51.PersonnelsDAO;
+import fr.uvsq21920965.pglp51.PersonnelsDao;
 
 /**
  * PersonnelsTest Classe.
@@ -15,7 +15,7 @@ import fr.uvsq21920965.pglp51.PersonnelsDAO;
  *
  */
 public class PersonnelsDAOTest {
-	PersonnelsDAO pdao = new PersonnelsDAO();
+	PersonnelsDao pdao = new PersonnelsDao();
 	Personnels p = new Personnels.Builder("Boo", "Thome", "web designer").build();
 	
 
@@ -31,6 +31,7 @@ public class PersonnelsDAOTest {
 	@Test
 	public  void updateTest() {
 		String fileName ="/home/oem/git/pglp_5.1/src/main/resources/"+p.getNom()+"_"+p.getPrenom()+".txt";
+		pdao.create(p);
 		Personnels p1=pdao.find(fileName);
 		p1 = new Personnels.Builder("Boo", "Thome", "administrator").build();
 		pdao.update(p1);
@@ -40,6 +41,7 @@ public class PersonnelsDAOTest {
 	@Test
 	public  void findTest() {
 		String fileName ="/home/oem/git/pglp_5.1/src/main/resources/"+p.getNom()+"_"+p.getPrenom()+".txt";
+		pdao.create(p);
 		Personnels p1=pdao.find(fileName);
 		assertEquals(p1.getNom(),"Boo");
 		assertEquals(p1.getPrenom(),"Thome");

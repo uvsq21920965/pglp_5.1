@@ -7,7 +7,7 @@ import java.io.File;
 import org.junit.Test;
 
 import fr.uvsq21920965.pglp51.CompositePersonnels;
-import fr.uvsq21920965.pglp51.CompositePersonnelsDAO;
+import fr.uvsq21920965.pglp51.CompositePersonnelsDao;
 import fr.uvsq21920965.pglp51.Personnels;
 
 
@@ -17,7 +17,7 @@ import fr.uvsq21920965.pglp51.Personnels;
  *
  */
 public class CompositePersonnelsDAOTest {
-	CompositePersonnelsDAO cpdao = new CompositePersonnelsDAO();
+	CompositePersonnelsDao cpdao = new CompositePersonnelsDao();
 	CompositePersonnels cp = new CompositePersonnels(5);
 	Personnels p = new Personnels.Builder("Boo", "Thome", "web designer").build();
 	
@@ -36,6 +36,7 @@ public class CompositePersonnelsDAOTest {
 	public  void updateTest() {
 		cp.add(p);
 		String fileName ="/home/oem/git/pglp_5.1/src/main/resources/groupe"+cp.getId()+".txt";
+		cpdao.create(cp);
 		CompositePersonnels cp1=cpdao.find(fileName);
 		Personnels p1 = new Personnels.Builder("Boo", "Thome", "administrator").build();
 		cp1 = new CompositePersonnels(5);
@@ -47,6 +48,7 @@ public class CompositePersonnelsDAOTest {
 	public  void findTest() {
 		cp.add(p);
 		String fileName ="/home/oem/git/pglp_5.1/src/main/resources/groupe"+cp.getId()+".txt";
+		cpdao.create(cp);
 		CompositePersonnels cp1=cpdao.find(fileName);
 		assertEquals(((Personnels)cp1.getPersonnes().get(0)).getNom(),"Boo");
 		assertEquals(((Personnels)cp1.getPersonnes().get(0)).getPrenom(),"Thome");
