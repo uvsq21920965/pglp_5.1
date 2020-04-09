@@ -1,10 +1,10 @@
 package fr.uvsq21920965.pglp51;
 
 /**
- * 
- * @author oem
+ * interface DAO.
+ * @author Sarra Belmahdi.
  *
- * @param <T>
+ * @param <T>  type d'objet.
  */
 public interface DAO<T> {
 

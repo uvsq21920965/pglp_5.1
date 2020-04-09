@@ -13,6 +13,7 @@ import java.io.ObjectOutputStream;
  *
  */
 public class PersonnelsDAO implements DAO<Personnels> {
+
   /**
    * methode pour creer un fichier personels.
    * @param obj Personnels.

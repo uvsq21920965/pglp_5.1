@@ -37,6 +37,14 @@ public class CompositePersonnels implements Ipersonnels,Serializable {
   public void add(Ipersonnels personneAtt) {
     personnes.add(personneAtt);
   }
+ 
+  /**
+   * methode pour acceder au id du groupe.
+   * @return id du groupe.
+   */
+  public int getId() {
+    return id;
+  }
 
   /**
    * supprimer un personnel.
