@@ -1,0 +1,39 @@
+package fr.uvsq21920965.pglp51;
+
+/**
+ * 
+ * @author oem
+ *
+ * @param <T>
+ */
+public interface DAO<T> {
+
+	/**
+	 * methode pour creer un fichier.
+	 * @param obj T.
+	 * @return obj crée.
+	 */
+	public T create(T obj);
+
+	/**
+	 * methode pour trouver fichier id.
+	 * @param id nom du fichier.
+	 * @return objet du fichier recherché.
+	 */
+	public T find(String id);
+
+	/**
+	 * methode pour mettre à jour un objet T.
+	 * @param obj l'objet qu'on veut mettre à jour.
+	 * @return l'objet après la mise à jour.
+	 */
+	public T update(T obj);
+
+	/**
+	 * methode pour supprimer le fichier de l'objet T obj.
+	 * @param objet T à supprimer.
+	 */
+	public void delete(T obj);
+
+}
+;
