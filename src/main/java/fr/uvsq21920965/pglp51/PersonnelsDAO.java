@@ -20,7 +20,7 @@ public class PersonnelsDAO implements DAO<Personnels> {
    */
   @Override
   public Personnels create(Personnels obj){
-    String file = "/home/oem/git/pglp_5.1/src/test/resources/"+obj.getNom()+"_"+obj.getPrenom()+".txt"; 
+    String file = "/home/oem/git/pglp_5.1/src/main/resources/"+obj.getNom()+"_"+obj.getPrenom()+".txt"; 
 	try {
 	  FileOutputStream fops = new FileOutputStream(file);
       ObjectOutputStream ops = new ObjectOutputStream(fops);
@@ -40,7 +40,7 @@ public class PersonnelsDAO implements DAO<Personnels> {
   @Override
   public Personnels find(String id) {
 	Personnels p1 = null;
-	String file = "/home/oem/git/pglp_5.1/src/main/resources/"+id+".txt";
+	String file = id;
 	try {
       FileInputStream  fips = new FileInputStream(file);
       ObjectInputStream ips = new ObjectInputStream(fips);
