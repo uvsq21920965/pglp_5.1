@@ -25,7 +25,7 @@ under the License.
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
-      <title>File: 1,
+      <title>File: 5,
              Errors: 0,
              Warnings: 0,
              Infos: 0
@@ -44,6 +44,62 @@ under the License.
             </tr>
           </thead>
           <tbody>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp51.AfficheIteratorGroupe.java">fr/uvsq21920965/pglp51/AfficheIteratorGroupe.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp51.CompositePersonnelsDao.java">fr/uvsq21920965/pglp51/CompositePersonnelsDao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp51.Dao.java">fr/uvsq21920965/pglp51/Dao.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp51.CompositePersonnels.java">fr/uvsq21920965/pglp51/CompositePersonnels.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
                           <tr>
                 <td>
                   <a href="${project.url}/checkstyle.html#fr.uvsq21920965.pglp51.PersonnelsDao.java">fr/uvsq21920965/pglp51/PersonnelsDao.java</a>
